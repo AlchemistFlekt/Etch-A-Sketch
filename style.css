@@ -19,6 +19,7 @@
     height: 25px;
     flex-shrink: 0;
 
-
-
+}
+.drawn{
+    background-color: black;
 }

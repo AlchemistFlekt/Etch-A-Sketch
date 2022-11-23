@@ -14,3 +14,11 @@ for(let i=0; i<16; i++){
     };
     container.append(row);
 };
+
+let grids= document.querySelectorAll('.grid');
+
+grids.forEach((grid) =>{
+    grid.addEventListener('mouseenter',function(e) {
+     e.target.classList.add("drawn");
+    });
+});
