@@ -1,5 +1,6 @@
 .container{
-    padding: 400px;
+    display: flex;
+    flex-direction: column;
     background-color: cornflowerblue;
 
 }
