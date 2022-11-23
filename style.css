@@ -1,0 +1,23 @@
+.container{
+    padding: 400px;
+    background-color: cornflowerblue;
+
+}
+.row{
+    display: flex;
+    flex-direction:row;
+    background-color: azure;
+    justify-content: center;
+
+
+}
+.grid{
+    background-color: gray;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+
+
+
+}
