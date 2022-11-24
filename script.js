@@ -22,3 +22,11 @@ grids.forEach((grid) =>{
      e.target.classList.add("drawn");
     });
 });
+
+let button= document.querySelector('.new');
+
+button.addEventListener('click',function() {
+  let size = prompt("Choose grid size between 3-100");
+  
+});
+
