@@ -10,16 +10,9 @@ for(let i=0; i<16; i++){
         row.append(box);
     };
     container.append(row);
+    fill();
 };
 
-
-let grids= document.querySelectorAll('.grid');
-
-grids.forEach((grid) =>{
-    grid.addEventListener('mouseenter',function(e) {
-     e.target.classList.add("drawn");
-    });
-});
 
 let button= document.querySelector('.new');
 
@@ -27,6 +20,7 @@ button.addEventListener('click',function() {
   let size = prompt("Choose grid size between 3-100");
   removeGrid();
   createGrid(size);
+  fill();
 
 });
 function createGrid(size){
@@ -42,7 +36,15 @@ function createGrid(size){
         container.append(row);
     }
 }
-
+function fill(){
+    let grids= document.querySelectorAll('.grid');
+    
+    grids.forEach((grid) =>{
+        grid.addEventListener('mouseenter',function(e) {
+         e.target.classList.add("drawn");
+        });
+    });
+}
 function removeGrid(){
     let rows= document.querySelectorAll(".row");
     rows.forEach((row) =>{
