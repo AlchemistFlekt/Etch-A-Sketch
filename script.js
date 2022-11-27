@@ -15,6 +15,7 @@ for(let i=0; i<16; i++){
     container.append(row);
 };
 
+
 let grids= document.querySelectorAll('.grid');
 
 grids.forEach((grid) =>{
@@ -28,8 +29,22 @@ let button= document.querySelector('.new');
 button.addEventListener('click',function() {
   let size = prompt("Choose grid size between 3-100");
   removeGrid();
+  createGrid(size);
 
 });
+function createGrid(size){
+    for(let i=0; i<size; i++){
+        let row = document.createElement("div");
+        row.classList.add("row");
+        
+        for(let j=0; j<size; j++){
+            let box= document.createElement("div");
+            box.classList.add("grid");
+            row.append(box);
+        };
+        container.append(row);
+    }
+}
 
 function removeGrid(){
     let rows= document.querySelectorAll(".row");
