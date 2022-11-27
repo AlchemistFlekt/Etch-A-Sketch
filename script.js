@@ -1,8 +1,5 @@
 let container = document.querySelector('.container');
-/*let box= document.createElement("div");
-box.classList.add("grid");
-let row = document.createElement("div");
-row.classList.add("row");*/
+
 for(let i=0; i<16; i++){
     let row = document.createElement("div");
     row.classList.add("row");
