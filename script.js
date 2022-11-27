@@ -27,6 +27,13 @@ let button= document.querySelector('.new');
 
 button.addEventListener('click',function() {
   let size = prompt("Choose grid size between 3-100");
-  
+  removeGrid();
+
 });
 
+function removeGrid(){
+    let rows= document.querySelectorAll(".row");
+    rows.forEach((row) =>{
+        row.remove();
+    });
+}
